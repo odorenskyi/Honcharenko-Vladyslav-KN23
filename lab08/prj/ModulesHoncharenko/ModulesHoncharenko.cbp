@@ -16,7 +16,15 @@
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-g" />
+					<Add directory="../../prj" />
 				</Compiler>
+				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add library="bin/Debug/libModulesHoncharenko.a" />
+					<Add directory="../../prj" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/ModulesHoncharenko" prefix_auto="1" extension_auto="1" />
