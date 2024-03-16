@@ -1,0 +1,138 @@
+[33mcommit 17292dc00da32485508c61baf673355d2f46cd0a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: vlad05x <organizm777alf@gmail.com>
+Date:   Sat Mar 16 13:37:57 2024 +0200
+
+    Created and tested a console application
+
+[33mcommit 0841e82e4c2c1dda41e62f8c3c19f3646b513438[m
+Author: vlad05x <organizm777alf@gmail.com>
+Date:   Sat Mar 16 13:10:14 2024 +0200
+
+     Built and tested the console application
+
+[33mcommit 5c5393a7a65665816f84c90a143da24a8dedd850[m
+Author: vlad05x <organizm777alf@gmail.com>
+Date:   Thu Mar 7 21:17:06 2024 +0200
+
+    Performed construction of functions and added prototype
+
+[33mcommit 20c056581c9f7569b040f97ce70aca64fc58823d[m
+Merge: 424c391 8e41d6a
+Author: vlad05x <organizm777alf@gmail.com>
+Date:   Thu Mar 7 21:14:56 2024 +0200
+
+    Merge branch 'main' of https://github.com/odorenskyi/Honcharenko-Vladyslav-KN23
+
+[33mcommit 424c3919a81d11c02bd90ba8d2736918f6ae5bc4[m
+Author: vlad05x <organizm777alf@gmail.com>
+Date:   Thu Mar 7 20:34:55 2024 +0200
+
+     Performed the construction of functions and added prototype
+
+[33mcommit 52ceac005d35610988aba92fb4ed71e46d61e68f[m
+Author: vlad05x <organizm777alf@gmail.com>
+Date:   Thu Mar 7 14:46:14 2024 +0200
+
+     Updated folder lab#8
+
+[33mcommit 8e41d6a47154a4ec2d44dca663ef436bfe0a5ccc[m
+Author: Vlad Honcharenko <138985102+vlad05x@users.noreply.github.com>
+Date:   Thu Mar 7 10:38:52 2024 +0200
+
+    Update README.md
+
+[33mcommit fa29a687ed084fd4b8f4b036124d1ed3185ac907[m
+Author: Vlad Honcharenko <138985102+vlad05x@users.noreply.github.com>
+Date:   Wed Mar 6 19:59:59 2024 +0200
+
+    Update README.md
+
+[33mcommit 3a10c4afff437b0585f3b2b41e98ef31fc089500[m
+Author: vlad05x <organizm777alf@gmail.com>
+Date:   Wed Mar 6 19:58:15 2024 +0200
+
+     Developed test suites for tasks 9.1-9.3
+
+[33mcommit 02e54a80a8934e7bf05e7eabf39323dd0204b1b8[m
+Author: vlad05x <organizm777alf@gmail.com>
+Date:   Wed Mar 6 19:20:22 2024 +0200
+
+     Performed the analysis of problems 9.1-9.3
+
+[33mcommit 0c4750274ec75ca473d48eb1e54425d3bf5cb206[m
+Author: Vlad Honcharenko <138985102+vlad05x@users.noreply.github.com>
+Date:   Wed Mar 6 18:32:31 2024 +0200
+
+    Update README.md
+
+[33mcommit 7084fa8c35154655b037b4bef01db3d6179c378b[m
+Author: Hanna Drieieva <158569416+HannaDrieieva@users.noreply.github.com>
+Date:   Tue Mar 5 13:08:04 2024 +0200
+
+    Update README.md
+
+[33mcommit 691d34864e82aa8edfdb91b124d1ff64c9c341ae[m
+Author: Hanna Drieieva <158569416+HannaDrieieva@users.noreply.github.com>
+Date:   Tue Mar 5 12:59:25 2024 +0200
+
+    Update README.md
+
+[33mcommit 5d9844f9bad4734717142f152790376c177699a0[m
+Author: Oleksandr Dorenskyi <37213842+odorenskyi@users.noreply.github.com>
+Date:   Mon Mar 4 06:47:44 2024 +0200
+
+    Видано варіант завдань 9.1–9.4
+
+[33mcommit dc767aa6166e3afc950783d5884e99a29e6694ac[m
+Author: Vlad Honcharenko <138985102+vlad05x@users.noreply.github.com>
+Date:   Sun Feb 25 09:53:15 2024 +0200
+
+    A listing of problem 8.2 was made
+    
+    A listing of problem 8.2 was made, conclusions have been drawn, as well as an updated test suite
+
+[33mcommit 6f83d8d719c8f7e3dd28f7380bb32b1751db892c[m
+Author: Vlad Honcharenko <138985102+vlad05x@users.noreply.github.com>
+Date:   Fri Feb 23 20:42:34 2024 +0200
+
+    Made an analysis and test case for problem 8.2
+
+[33mcommit e1003e56a641bd0e10d3fd63246389c833d8797a[m
+Author: Vlad Honcharenko <138985102+vlad05x@users.noreply.github.com>
+Date:   Fri Feb 23 14:04:09 2024 +0200
+
+    Updated folders and files
+    
+    Created a static library project, a header file, and a console application.
+
+[33mcommit f22d775e6ce6c6c1b7c42bda628a9b5fc2c760f5[m
+Author: Vlad Honcharenko <138985102+vlad05x@users.noreply.github.com>
+Date:   Wed Feb 21 22:22:00 2024 +0200
+
+    Created and added folders
+    
+    Wrote code for task 8.1
+
+[33mcommit f6ad8df322f6264a4c79aaf4f21d6ab808852b35[m
+Author: Vlad Honcharenko <138985102+vlad05x@users.noreply.github.com>
+Date:   Wed Feb 21 13:22:59 2024 +0200
+
+    Update README.md
+
+[33mcommit 079f8559d55a4039f18d3ba5a1ddd88c1c604343[m
+Author: Oleksandr Dorenskyi <37213842+odorenskyi@users.noreply.github.com>
+Date:   Sun Feb 18 23:43:19 2024 +0200
+
+    Видано варіант завдань 8.1–8.2. Успіхів))
+
+[33mcommit 385dcda23a0dabf52cbf26374d7ccefe8e0d3efc[m
+Author: odorenskyi <odorensky@gmail.com>
+Date:   Sun Feb 18 12:51:17 2024 +0200
+
+    -
+
+[33mcommit 007705fc943e941f458198c06418771da0f104de[m
+Author: odorenskyi <odorensky@gmail.com>
+Date:   Sun Feb 18 12:42:24 2024 +0200
+
+    -
