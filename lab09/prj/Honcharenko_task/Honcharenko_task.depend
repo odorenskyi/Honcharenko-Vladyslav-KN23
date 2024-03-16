@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1710609253 source:e:\university\bmtp\honcharenko-vladyslav-kn23\lab09\prj\honcharenko_task\main.cpp
+	<iostream>
+	<cmath>
+	<string>
+	<windows.h>
+	"ModulesHoncharenko.h"
+
+1710584165 e:\university\bmtp\honcharenko-vladyslav-kn23\lab08\prj\moduleshoncharenko.h
+
