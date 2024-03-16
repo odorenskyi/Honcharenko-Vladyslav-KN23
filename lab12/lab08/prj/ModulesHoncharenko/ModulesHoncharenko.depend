@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1708539028 source:e:\university\bmtp\bmtp-lab8-honcharenko\prj\moduleshoncharenko\main.cpp
+	<iostream>
+	<cmath>
+
+1710154195 source:e:\university\bmtp\honcharenko-vladyslav-kn23\lab08\prj\moduleshoncharenko\moduleshoncharenko.cpp
+	<cmath>
+	<iostream>
+	<string>
+

@@ -1,4 +1,3 @@
-// ModulesПрізвище.cpp (Реалізація функції s_calculation)
 #include <cmath>
 #include <iostream>
 #include <string>
@@ -9,8 +8,7 @@ double s_calculation(double x, double y, double z) {
     return z * sin(pow(x, 2) * y) + sqrt(fabs(z - 12 * x)) / pow(y, 3);
 }
 
-// Task 9.1
- void calcWave(double grade, double& waveHeight, std::string& seaDescription) {
+void calcWave(double grade, double& waveHeight, std::string& seaDescription) {
     if (grade < 0 || grade > 9) {
         waveHeight = 0;
         seaDescription = "Некоректний бал за шкалою ВМО.";
@@ -48,40 +46,36 @@ double s_calculation(double x, double y, double z) {
         }
     }
 }
-
-// Task 9.2
-void countNumbers (int n, int& negativeCount, int& rangeCount) {
+void countNumbers(int n, int& negativeCount, int& zeroCount, int& rangeCount) {
     negativeCount = 0;
     rangeCount = 0;
+    zeroCount = 0;
 
     for (int i = 0; i < n; ++i) {
         int num;
-        cout << "Введіть число: " << (i + 1) << ": ";
+        cout << "Введіть число " << (i + 1) << ": ";
         cin >> num;
 
-         if (num < 0) {
+        if (num < 0) {
             negativeCount++;
         } else if (num == 0) {
-            // Handle zero
-        }
-        if (num >= 5 && num <= 1024) {
+            zeroCount++;
+        } else if (num >= 5 && num <= 1024) {
             rangeCount++;
         }
     }
 }
 
-// Task 9.3
 void calcBinaryInfo(unsigned int N, bool& D1, int& binaryCount) {
     D1 = (N & 1) == 1;
     binaryCount = 0;
 
     while (N > 0) {
         if (D1) {
-             binaryCount += (N % 2 == 0) ? 1 : 0;
+            binaryCount += (N % 2 == 0) ? 1 : 0;
         } else {
             binaryCount += (N % 2 == 1) ? 1 : 0;
         }
         N /= 2;
     }
 }
-
