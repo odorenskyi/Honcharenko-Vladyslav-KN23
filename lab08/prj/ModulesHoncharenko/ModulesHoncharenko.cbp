@@ -16,14 +16,14 @@
 				<Compiler>
 					<Add option="-Wall" />
 					<Add option="-g" />
-					<Add directory="../../prj/ModulesHoncharenko.h" />
+					<Add directory="../../prj" />
 				</Compiler>
 				<Linker>
 					<Add option="-static-libstdc++" />
 					<Add option="-static-libgcc" />
 					<Add option="-static" />
 					<Add library="bin/Debug/libModulesHoncharenko.a" />
-					<Add directory="../../prj/ModulesHoncharenko.h" />
+					<Add directory="../../prj/ModulesHoncharenko" />
 				</Linker>
 			</Target>
 			<Target title="Release">
