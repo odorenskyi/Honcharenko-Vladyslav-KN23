@@ -40,7 +40,6 @@ int main() {
     cin >> N;
 
     calcBinaryInfo(N, D1, binaryCount);
-
     if (D1) {
         cout << "Біт D1 числа N рівний 1." << endl;
         cout << "Кількість двійкових нулів у числі N: " << binaryCount << endl;
