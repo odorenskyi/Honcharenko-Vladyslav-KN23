@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1712255289 source:e:\university\bmtp\honcharenko-vladyslav-kn23\lab10\prj\testdriver\main.cpp
+	"ModulesHoncharenko.h"
+	<iostream>
+	<string>
+
+1712077411 e:\university\bmtp\honcharenko-vladyslav-kn23\lab08\prj\moduleshoncharenko.h
+	<string>
+

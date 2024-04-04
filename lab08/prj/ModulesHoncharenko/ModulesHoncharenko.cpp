@@ -6,6 +6,7 @@
 
 using namespace std;
 
+
 double s_calculation(double x, double y, double z) {
     return z * sin(pow(x, 2) * y) + sqrt(fabs(z - 12 * x)) / pow(y, 3);
 }
@@ -88,7 +89,7 @@ void calcBinaryInfo(unsigned int N, bool& D1, int& binaryCount) {
 // Function for counting the number of vowels in a word
 int countVowels(string word) {
     int count = 0;
-    string vowels = "aeiouаеіїоуюя";
+    string vowels = "AEIOUАЕІЇОУЮЯaeiouаеіїоуюя";
     for (char& c : word) {
         if (vowels.find(c) != string::npos) {
             count++;
@@ -110,8 +111,7 @@ void processFiles(const string& input, const string& output) {
         return;
     }
 
-    string inputText;
-    getline(inputFile, inputText);
+    string inputText((istreambuf_iterator<char>(inputFile)), istreambuf_iterator<char>());
 
     inputFile.close();
 
@@ -124,36 +124,42 @@ void processFiles(const string& input, const string& output) {
     outputFile << "Авторська інформація: \nІм'я та прізвище розробника модуля: Гончаренко Влад, \nУстанова/організація: ЦНТУ, \nМісто: Кропівницький, \nКраїна: Україна, \nРік розробки: 2024\n";
 
     int vowelCount = countVowels(inputText);
-    outputFile << "Кількість голосних літер у слові з вхідного файла: " << vowelCount;
+    outputFile << "\nКількість голосних літер у слові з вхідного файла: " << vowelCount;
 
-    string poem = "До щастя не пускає лінощів орава.\nУ чім воно - ніхто не знає до пуття.\nНавчитись радісно робити кожну справу -\nНайперше правило щасливого життя.";
+    string poem = "\nДо щастя не пускає лінощів орава.\nУ чім воно - ніхто не знає до пуття.\nНавчитись радісно робити кожну справу -\nНайперше правило щасливого життя.";
     bool containsWordInPoem = containsWord(poem, inputText);
-    outputFile << "Слово з вихідного файлу " << (containsWordInPoem ? "є" : "не є") << " у вірші Віталя Іващенка\n";
+    outputFile << "\nСлово з вхідного файлу " << (containsWordInPoem ? "є" : "не є") << " у вірші Віталя Іващенка";
 
     outputFile.close();
 
-    cout << "Обробку завершено. Висновок записаний у " << output;
+    cout << "\nОбробку завершено. Висновок записаний у " << output;
 }
 
 //Task 10.2
+// Function for counting the number of consonants in a word
 int countConsonants(string word) {
     int countCons = 0;
-    string consonants = "bcdfghjklmnpqrstvwxyzбвгґджзйклмнпрстфхцчшщюя";
     for (char& ch : word) {
-        if (consonants.find(ch) != string::npos) {
-            countCons++;
+        char lowercase_ch = tolower(ch);
+        if ((lowercase_ch >= 'a' && lowercase_ch <= 'z') || (lowercase_ch >= 'а' && lowercase_ch <= 'я')) {
+            if (!isvowel(lowercase_ch)) {
+                countCons++;
+            }
         }
     }
     return countCons;
 }
-// Function to write the number of consonant letters, date and time to the output file
+
+
+
+// Function to append the number of consonant letters, date, and time to the output file
 void writeToInputFile(const string& input) {
     ofstream inputFile(input, ios_base::app);
     if (!inputFile.is_open()) {
         cout << "Неможливо відкрити файл!";
         return;
     }
-// Time and date
+
     time_t currentTime = time(nullptr);
     tm* localTime = localtime(&currentTime);
     char timeBuffer[50];
@@ -170,8 +176,8 @@ void writeToInputFile(const string& input) {
 
     int consonantCount = countConsonants(fileContent);
 
-    inputFile << "Кількість приголосних літер у тексті: " << consonantCount;
-    inputFile << "Дата та час дозапису: " << timeBuffer;
+    inputFile << "\nКількість приголосних літер у тексті: " << consonantCount << endl;
+    inputFile << "\nДата та час дозапису: " << timeBuffer << endl;
 
     inputFile.close();
 
@@ -179,17 +185,52 @@ void writeToInputFile(const string& input) {
 }
 
 //Task 10.3
-double calcS_calculation (double x, double y, double z) {
-    return s_calculation(x, y, z);
-}
+// Функція для обчислення результату за допомогою s_calculation
 
-string BinaryNum(int n) {
-    if (n == 0)
+
+// Функція для переведення числа у двійковий формат
+string BinaryNum(int b) {
+    if (b == 0)
         return "0";
     string binary = "";
-    while (n > 0){
-        binary = to_string(n % 2) + binary;
-        n = n / 2;
+    while (b > 0){
+        binary = to_string(b % 2) + binary;
+        b = b / 2;
     }
     return binary;
 }
+
+// Функція для вирішення задачі 10.3
+void solveTask103(const string& input, const string& output) {
+    double x, y, z;
+    int b;
+
+    // Зчитуємо вхідні дані з файлу
+    ifstream inputFile(input);
+    if (!inputFile.is_open()) {
+        cout << "Неможливо відкрити вхідний файл!" << endl;
+        return;
+    }
+    inputFile >> x >> y >> z >> b;
+    inputFile.close();
+
+    // Відкриваємо файл для запису результатів
+    ofstream outputFile(output, ios::app); // Використовуємо режим ios::app, щоб дописувати до вмісту файлу
+    if (!outputFile.is_open()) {
+        cout << "Неможливо відкрити вихідний файл!" << endl;
+        return;
+    }
+
+    // Викликаємо функцію s_calculation та записуємо результат у файл
+    double resultS_calc = s_calculation(x, y, z);
+    outputFile << "\nРезультат виконання s_calculation з аргументами " << x << ", " << y << ", " << z << ": " << resultS_calc << endl;
+
+    // Записуємо число b у двійковому коді у файл
+    string resultBinary = BinaryNum(b);
+    outputFile << "Число " << b << " у двійковому коді: " << resultBinary << endl;
+
+    outputFile.close();
+
+    cout << "Результати записані у файл " << output << endl;
+}
+
