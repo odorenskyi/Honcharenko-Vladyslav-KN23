@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1715932161 source:e:\university\bmtp\honcharenko-vladyslav-kn23\lab11\prj\prj_1_honcharenko\main.cpp
+	<iostream>
+	<ctime>
+	<fstream>
+	<conio.h>
+	"struct_type_project_1.h"
+	"ModulesHrebeniuk.h"
+	"ModulesHoncharenko.h"
+	"ModulesKlui.h"
+
+1715844680 e:\university\bmtp\honcharenko-vladyslav-kn23\lab11\prj\dependencies\struct_type_project_1.h
+	<string>
+
+1715515682 e:\university\bmtp\honcharenko-vladyslav-kn23\lab11\prj\dependencies\moduleshoncharenko.h
+
+1715844255 e:\university\bmtp\honcharenko-vladyslav-kn23\lab11\prj\dependencies\moduleshrebeniuk.h
+
+1715615224 e:\university\bmtp\honcharenko-vladyslav-kn23\lab11\prj\dependencies\modulesklui.h
+	"struct_type_project_1.h"
+

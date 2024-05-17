@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1715628669 source:e:\university\bmtp\honcharenko-vladyslav-kn23\lab11\prj\moduleshoncharenko\main.cpp
+	<iostream>
+	<fstream>
+	"struct_type_project_1.h"
+
+1715844680 e:\university\bmtp\honcharenko-vladyslav-kn23\lab11\prj\dependencies\struct_type_project_1.h
+	<string>
+
