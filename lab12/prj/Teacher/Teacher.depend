@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1716315846 source:e:\university\bmtp\honcharenko-vladyslav-kn23\lab12\prj\teacher\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<Windows.h>
+	"ClassLab12_Honcharenko.h"
+
+1716314184 e:\university\bmtp\honcharenko-vladyslav-kn23\lab12\prj\classlab12_honcharenko.h
+	<cmath>
+	<stdexcept>
+	<iostream>
+
