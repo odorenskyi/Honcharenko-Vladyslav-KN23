@@ -12,7 +12,7 @@ private:
 
 public:
     // Конструктор для ініціалізації атрибутів
-    ClassLab12_Honcharenko() : radius(1.0), diameter(2.0) {}
+    ClassLab12_Honcharenko() : radius(3.5), diameter(2.0) {}
     ClassLab12_Honcharenko(double radius, double diameter) {
         if (radius <= 0 || diameter <= 0) {
             throw std::invalid_argument("Розміри повинні бути більше нуля");
